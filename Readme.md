@@ -19,13 +19,11 @@ enum TipoPrenda{
 	PANTALON(Categoria.PARTE_INFERIOR),
 	ZAPATOS(Categoria.CALZADO),
 	AROS(Categoria.ACCESORIO);
-	
 	private Categoria categoria;
-	
+	//Constructor TipoPrenda
 	public TipoPrenda(Categoria categoria){
 		this.categoria = categoria;
 	}
-	
 	Categoria categoria(
 		return categoria;
 	)
@@ -44,20 +42,20 @@ Para cumplir este requerimiento la clase Prenda tiene dos constructores:</p>
 	private Material material;
 	private Color colorPrincipal;
 	private Color colorSecundario;
-	
+	//Constructor con datos mínimos solicitados (Color Principal, Material y Tipo de Prenda)
 	public Prenda(TipoPrenda tipo, Material material, Color colorPrincipal) {
 		Object.requireNonNull(this.tipo, "Tipo de Prenda no puede ser núlo") = tipo;
 		Object.requireNonNull(this.material, "Material no puede ser núlo") = material;
 		Object.requireNonNull(this.colorPrincipal, "Color Principal no puede ser núlo") = colorPrincipal;
 	}
-	
+	//Constructor con datos Color Secundario agregado   	
 	public Prenda(TipoPrenda tipo, Material material, Color colorPrincipal, Color colorSecundario) {
 		Object.requireNonNull(this.tipo, "Tipo de Prenda no puede ser núlo") = tipo;
 		Object.requireNonNull(this.material, "Material no puede ser núlo") = material;
 		Object.requireNonNull(this.colorPrincipal, "Color Principal no puede ser núlo") = colorPrincipal;
 		this.colorSecundario = colorSecundario;
 	}
-	
+	//Para idenficiar a qué categoría pertenece una Prenda
 	public Categoria categoria(){
 		return this.tipo.categoria();
 	}
