@@ -30,7 +30,7 @@ enum TipoPrenda{
 }
 </code></pre>
 <h2 id="crear-una-prenda">Crear una prenda</h2>
-<p>Como mínimo, una prenda debe tener Color Primario, Tipo, Material y Categoría. Para modelar Color y Material también utilizo enums ya que no tienen comportamiento.<br>
+<p>Como mínimo, una prenda debe tener Color Primario, Tipo, Material y Categoría. Para modelar Material también utilizo enums ya que no tienen comportamiento. Para Color utilizamos una clase con tres int que representan la codificación RGB.<br>
 Para cumplir este requerimiento la clase Prenda tiene dos constructores:</p>
 <ul>
 <li>Uno con Color Primario, Tipo y Material</li>
